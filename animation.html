@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes moveright{
+            from{
+                transform:translateY(0);
+            }
+            to{
+                transform: translateY(300px);        
+                }
+        }
+        @keyframes growbox{
+            0%{
+                height: 20px;
+                width: 20px;
+            }
+            100%{
+                height: 300px;
+                width: 300px;
+            }
+        }
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+       @keyframes heartbeat{
+           0%{
+            transform: scale(1);
+           }
+           50%
+           {
+            transform: scale(1.5);
+           }
+           100%{
+            transform: scale(1);
+           }
+        }
+    
+    
+
+       
+
+        .box{
+            height:50px;
+            width:50px;
+            margin-bottom: 10px;
+            background-color: aqua;
+            animation-name: moveright;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        .box1{
+            height:50px;
+            width:50px;
+            margin-bottom: 50px;
+            margin-left: 100px;
+            background-color: aqua;
+            animation-name: growbox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        .box2{
+            margin-bottom: 10px;
+            height: 100px;
+            width:100px;
+            margin-left: 400px;
+            background-color:black;
+            animation-name: rotate;
+            animation:rotate 1s infinite
+        }
+        .heart{
+            
+            font-size: 50px;
+            animation-name: heartbeat;
+            animation-duration: 1s;
+            margin-left: 500px;
+            
+            animation-iteration-count: infinite;
+        }
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="box">box</div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="heart">❤️</div>
+    
+    
+</body>
+</html>

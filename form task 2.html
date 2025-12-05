@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #message{
+            color:red;
+            
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1><b>SIMPLE FORM</b></h1>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your fullname" required>
+        <br><br>
+         <label>Email id:</label>
+        <input type="email" placeholder="Enter your email address"required>
+        <br><br>
+        <button class="button">Submit</button>
+        <script>
+            if(name===""){
+                message.style.color="red";
+                message.innerText="Name cannot be empty";
+            }
+            else if(!email.includles("@")){
+                message.style.color="red";
+                message.innerText="Email cannot be empty";
+            }
+            else{
+                message.style.color="green";
+                message.innerText="Thanks for submitting";
+
+            }
+        </script>
+    </form>
+    
+</body>
+</html>
